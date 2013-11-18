@@ -1,0 +1,27 @@
+[
+	{
+		"course":"Linear Algebra",
+		"id":"12345",
+		"prof":"Barney Ruble"
+	},
+	{
+		"course":"Calc II",
+		"id":"14535",
+		"prof":"Elmo Pearson"
+	},
+	{
+		"course":"English Comp II",
+		"id":"17523",
+		"prof":"Doug Funnie"
+	},
+	{
+		"course":"Health Studies",
+		"id":"34566",
+		"prof":"Fran Fromboise"
+	},
+	{
+		"course":"Senior Design",
+		"id":"66666",
+		"prof":"Hank Panky"
+	}
+]

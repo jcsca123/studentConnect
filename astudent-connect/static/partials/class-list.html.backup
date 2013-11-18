@@ -1,0 +1,20 @@
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+      <!--Sidebar content-->
+ 
+      Search: <input ng-model="query">
+ 
+    </div>
+  </div>
+
+  <div>
+    <ul class = 'course'>
+      <li ng-repeat="class in course | filter:query">
+        <h2><a href="#/class/{{class.course}}">{{class.course}}</a></h2>
+        <p>CRN: {{class.id}}</p>
+        <p>Professor: {{class.prof}}</p>
+      </li>
+    </ul>
+  </div>
+</div>

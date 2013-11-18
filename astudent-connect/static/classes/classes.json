@@ -1,0 +1,32 @@
+[
+	{
+		"slug":"linear-algebra",
+		"course":"Linear Algebra",
+		"id":"12345",
+		"prof":"Barney Ruble"
+	},
+	{
+		"slug":"calculus-III",
+		"course":"Calc III",
+		"id":"14535",
+		"prof":"Elmo Pearson"
+	},
+	{
+		"slug":"english-comp-II",
+		"course":"English Comp II",
+		"id":"17523",
+		"prof":"Doug Funnie"
+	},
+	{
+		"slug":"health-studies",
+		"course":"Health Studies",
+		"id":"34566",
+		"prof":"Fran Fromboise"
+	},
+	{
+		"slug":"senior-design",
+		"course":"Senior Design",
+		"id":"66666",
+		"prof":"Hank Panky"
+	}
+]

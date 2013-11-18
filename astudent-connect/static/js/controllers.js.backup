@@ -1,0 +1,17 @@
+'use strict';
+
+/* Controllers */
+
+var classControllers = angular.module('classControllers', []);
+
+classControllers.controller('ClassListCtrl', [ '$scope', '$http' ,
+	function ClassListCtrl( $scope, $http ){
+	$http.get('classes/classes.json').success(function(data) {
+		$scope.course = data;
+	});
+}]);
+
+classControllers.controller('ClassMsgCtrl', ['$scope', '$routeParams',
+  function($scope, $routeParams) {
+    $scope.courseID = $routeParams.courseID;
+  }]);

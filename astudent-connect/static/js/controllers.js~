@@ -1,0 +1,16 @@
+'use strict';
+
+/* Controllers */
+
+var classControllers = angular.module('studentconnectApp', []);
+
+classControllers.controller('ClassListCtrl', function ClassListCtrl($scope, $http) {
+	$http.get('classes/classes.json').success(function(data) {
+		$scope.classes = data;
+	});
+});
+
+classControllers.controller('ClassMsgCtrl', ['$scope', '$routeParams',
+  function($scope, $routeParams) {
+    $scope.classes = $routeParams.classes;
+  }]);

@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+      <!--Sidebar content-->
+ 
+      Search: <input ng-model="query">
+ 
+    </div>
+  </div>
+
+  <div>
+    <ul class = 'messages'>
+      <li ng-repeat="msg in messages | filter:query | orderBy:orderProp">
+        <div ng-repeat="dat in msg.data">
+        <h2><a href="#/class/{{msg.user}}">{{dat.user}}</a></h2>
+        <p>Wrote: {{dat.message}}</p>
+        <p>Time: {{dat.time}}</p>
+        <p>Class: {{msg.course-title}}</p>
+      </div>
+      </li>
+    </ul>
+  </div>
+</div>
